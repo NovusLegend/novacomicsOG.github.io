@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>despaire</title>
+        <style>
+            p{
+                font-family:Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            h1{
+                font-family:Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            body {
+                background-color: rgb(0, 0, 0);
+
+            }
+            #basic-info {
+                background-color: grey;
+                margin: 60px;
+                
+            }
+            #gg {
+                border-radius: 15px;
+            }
+            #cool-end {
+                margin-top:550px;
+                background-color: rgb(70, 70, 70);
+            }
+            h2{
+                color: white;
+            }
+            ul {
+          border-radius: 40px;
+          height:50px;
+        padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        transition: 0.3s;
+        color: #09ff00;
+        background:none;
+    }
+    ul li ul.dropdown {
+        transition: 0.3s;
+        min-width: 100%;
+        height:200px; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown {
+        transition: 0.3s;
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+        transition: 0.3s;
+        display: block;
+    }
+    nav ul li:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  font-family: 'Segoe UI';
+  padding: 0 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:hover::after{
+  width:100%;
+}
+            
+        
+        </style>
+    </head>
+    <body>
+        <nav id="myTopnav">
+            <ul>
+              <li class="topnav">
+                <img src="Picture1.png">
+                <ul class="dropdown">
+                     <li class="responsive"><a href="new.html">Home</a></li>
+                    <li class="responsive"><a href="about.html">About</a></li>
+                    <li  class="responsive"><a href="archives intro.html">ARCHIVES®</a></li>
+                </ul>
+              </li>
+              <li class="topnav"><a href="characters.html">Characters</a></li>
+              <li class="topnav">
+                  <a href="#" class="topnav">Movies ▾</a>
+                  <ul class="dropdown">
+                      <li class="responsive"><a href="releases.html">Releases</a></li>
+                      <li  class="responsive"><a href="news.html">News</a></li>
+                      <li  class="responsive"><a href="side movies.html">Side movies</a></li>
+                  </ul>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+                <ul class="dropdown">
+                    <li><img src="email_grey600_24dp.png" id="gogo">novacomicsoriginal@gmail.com</li>
+                    <li>0758066054</li>
+                </ul>
+            </li>
+              </li>
+              <li><a href="comics.html">Comics</a></li>
+              <li><a href="games.html">Games</a></li>
+          </ul>
+        </nav>
+        <h1>Simple research notes</h1>
+        <p class="cool-end">I have been making some research mainly because of boredom<br>
+        for starters,  </p>
+        <h2>IPS cells</h2>
+        <p class="cool-end">The groundbreaking invention of induced pluripotent stem cells by Shinya Yamanaka not only gave hope to patients suffering from incurable diseases, but also laid a foundation for scientists to find treatments for the diseases that were considered untreatable before iPS cells.<br>
+        At the Genome Institute of Singapore,Scientists are using Induced pluripotent stem cells to generate mini mid brains. which will eventually lead to creation of whole new brains, which was said to be almost impossible</p>
+        <button id="onlybutton">click here</button>
+        
+    </body>  
+    <iframe width="784" height="441" id="gg" src="AJR - 100 Bad Days (Official Video).mp4" title="100 bad days" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

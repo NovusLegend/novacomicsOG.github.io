@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+    </head>
+    <body>
+        <style>
+                      p{
+            font-family:'Segoe UI';
+            color: white; 
+        }
+        h1{
+            font-family:'Segoe UI';
+            color: white;
+
+        }
+        body {
+            background-color: rgb(0, 27, 100);
+
+        }
+        #re {
+            background-color:white;
+            border-radius: 9px;
+            position:absolute;
+            width: 790px;
+            top:20%;
+            height:390px;
+            left:5%;
+        }
+        #yo {
+            background-color: rgb(41, 41, 41);
+            width: 305px;
+                position:absolute;
+                border-radius: 40px;
+                left:1%;
+                top:20%;
+                background-image:url(20230514_091711_0000.png);
+                transition: 0.6s;
+        }
+        #yo:hover{
+            color: orange;
+            transition: 0.6s;
+            width: 450px;
+            height:500px;
+            font-size: larger;
+        }
+        #ye {
+            background-color: rgb(41, 41, 41);
+            width: 305px;
+                position:absolute;
+                border-radius: 40px;
+                left:35%;
+                top: 10%;
+                background-image:url(20230514_091711_0000.png);
+                transition: 0.6s;
+        }
+        #ye:hover {
+            transition: 0.6s;
+            font-size: larger;
+            width: 450px;
+            color: orange;
+            height:500px;
+        }
+        #wo {
+            background-color: rgb(41, 41, 41);
+            width: 375px;
+                position:absolute;
+                border-radius: 40px;
+                left:55%;
+                top: 65%;
+                background-image:url(20230514_091711_0000.png);
+                transition:0.6s;
+        }
+        #hidden {
+            position: absolute;
+            color:  rgb(0, 27, 100);
+            top: 200%;
+        }
+        #wo:hover {
+            transition: 0.6s;
+            font-size: larger;
+            width: 450px;
+            height:500px;
+            color: orange;
+        }
+        #img {
+            position:absolute;
+                top:400%;
+                left:70%;
+        }
+        .gogog {
+            transition: 0.5s;
+            color: none;
+        }
+        .gogog:hover {
+            transition:0.5s;
+            color:red;
+        }
+        #hehe {
+            background-color: rgb(41, 41, 41);
+            width: 375px;
+                position:absolute;
+                border-radius: 40px;
+                left:20%;
+                top:80%;
+                background-image:url(20230514_091711_0000.png);
+                transition: 0.6s;
+                height: auto;
+        }
+        #hehe:hover {
+            height:500px;
+            transition: 0.6s;
+            font-size: larger;
+            position:absolute;
+            width:450px;
+            color: rgb(255, 238, 0);
+        }
+        ul {
+          display: flex;
+          align-items: center;
+  justify-content: center;
+          font-family: 'Poppins';
+          box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+          border-radius: 9px;
+          height:50px;
+          padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        transition: 0.3s;
+        color: #3cff00;
+        background:none;
+    }
+    ul li ul.dropdown {
+        transition: 0.3s;
+        min-width: 100%;
+        height:200px; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown {
+        transition: 0.3s;
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+        transition: 0.3s;
+        display: block;
+    }
+    nav ul li:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  font-family: 'Segoe UI';
+  padding: 0 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:hover::after{
+  width:100%;
+}
+#Yasss {
+  position:absolute;
+  top: 400%;
+  width:40%;
+  background-color:#3f48cc;
+  border-radius: 100px;
+}
+#yasin {
+  width:200px;
+  height: auto;
+  transition: 0.5s;
+}
+#yasin:hover {
+  transition: 0.5s;
+  width:400px;
+  height: auto;
+}
+.heyo {
+  color:white;
+  transition: 0.5s;
+}
+.heyo:hover {
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+#gogo {
+  position:relative;
+    border-radius: 100%;
+    width:40px;
+height:40px;
+overflow:hidden;
+transition: 1.0s;
+}
+#gogo:hover{
+    transition:1.2s;
+    transform:rotate(720deg);
+    -wekbit-transform:rotate(720deg); 
+    -moz-transform:rotate(720deg); 
+}
+        </style>
+            <div id="Yasss">
+                <center><p class="heyo">Nova Comics™ presents</p>
+              <img src="yo.png" id="yasin">
+              <p class="heyo">DRAGON BALL XTREME®<br></p>
+              <p class="heyo">Coming Late 2023</p>
+              <p class="heyo">on CloudStream | Youtube | Yumblr</p></center>
+            </div>
+            <nav id="myTopnav">
+                <ul>
+                  <li class="topnav">
+                    <img src="Picture1.png">
+                    <ul class="dropdown">
+                        <li class="responsive"><a href="new.html">Home</a></li>
+                        <li class="responsive"><a href="about.html">About</a></li>
+                        <li  class="responsive"><a href="archives intro.html">ARCHIVES®</a></li>
+                    </ul>
+                  </li>
+                  <li class="topnav"><a href="characters.html">Characters</a></li>
+                  <li class="topnav">
+                      <a href="#" class="topnav">Movies ▾</a>
+                      <ul class="dropdown">
+                          <li class="responsive"><a href="releases.html">Releases</a></li>
+                          <li  class="responsive"><a href="news.html">News</a></li>
+                          <li  class="responsive"><a href="side movies.html">Side movies</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                    <ul class="dropdown">
+                        <li><img src="email_grey600_24dp.png" id="gogo">novacomicsoriginal@gmail.com</li>
+                        <li>0758066054</li>
+                    </ul>
+                </li>
+                  </li>
+                  <li><a href="comics.html">Comics</a></li>
+                  <li><a href="books.html">Books</a></li>
+                  <li><a href="games.html">Games</a></li>
+              </ul>
+            </nav>
+        <div id="re">
+            <h1></h1>
+        </div>
+        <h1 id="hidden">Made by <strong>M.Jeremiah11</strong>(NovusLegend)</h1>
+        <div id="yo">        
+            <h1 class="gogog">BackGround</h1>
+            <p class="gogog">This organisation was started by three students and then grew to eleven students. It was started in April 2023.<br>
+        the names of the people who started this organisation are;<br>
+        M. Jeremiah11(Novus Legend)<br>
+        M.Kieth(The Author)<br>
+        M.Cyrus(syro)<br>
+        O.Darylo(Shadow Legend)<br>
+        K.Rodney(KDB)<br>
+        K.Ernesto(Da Besto)<br>
+        A.Ronaldo(Morning Star)<br>
+        B.Wycliff(gent)<br>
+        B.Anderson(king fisher)<br>
+        W.Yassasin<br>
+        M.George(yeye)<br>
+     </p></div>
+     <div id="ye">
+        <h1 class="gogog">The Idea</h1>
+        <p class="gogog">We sat down and thought of many things to do but we came to a conclusion that if we wanted to stand out, we should not start off with uperpowered heroes like superman, we should have a cordinating system and since this is heading to be a sort of marvel or dc kind we should have a system that is above all the other characters and keeps track of them, sort of the watcher and his infinite number of what-if universes that he monitors so we came up with something like that but in our own perspective</p></div>
+     <div id="wo">
+        <h1 class="gogog">THE ARCHIVES®</h1>
+        <p class="gogog"> THE ARCHIVES® are our first production.<br>
+    It is a serie that is mainly about a giant library that consists of never ending books and each one of those books is a universe where once you turn a page foward, you view the future of that universe and vice versa.<br>
+    THE ARCHIVES® were started by a god known as The Author and as time went by, the author found it was a waste of time for him to be the one to guard the ARCHIVES® so he appointed a series of spicies to become the keeper of the ARCHIVES®.
+     </p></div>
+     <div id="hehe"><h1 class="gogog">OUR FUTURE PLANS</h1>
+      <p class="gogog">We want to make our ideas into animated movies  both 3D and anime style and maybe further into the future we would like to make live action movies but as of for now we cant do that. We also are planning on making games. We also dream of making a collaboration with MARVEL® or DC®</p>
+  </div>
+    </body>
+</html>

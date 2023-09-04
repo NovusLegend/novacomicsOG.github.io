@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mugabi Jeremiah</title>
+        <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            p{
+                font-family:Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            h1{
+                font-family:Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            body {
+                background-color: rgb(0, 0, 0);
+
+            }
+            #basic-info {
+                background-color: grey;
+                margin: 100px;
+                
+            }
+            #cool-end {
+                margin-top:600px;
+                background-color: rgb(70, 70, 70);
+            }
+          
+             #fantasy { 
+                font-family:Arial, Helvetica, sans-serif;
+                color: white;
+             }  
+             .settings {  
+  height:73px; 
+  float:left;
+  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
+  background-repeat:no-repeat;
+  width:250px;
+  margin:0px;
+  text-align: center;
+  font-size:20px;
+  font-family: 'Strait', sans-serif;
+}
+ 
+/* ScrolBar  */
+.scrollbar{
+   height: 90%;
+   width: 100%;
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
+ 
+.scrollbar:hover{
+   height: 90%;
+   width: 100%;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+ 
+/* Scrollbar Style */ 
+#style-1::-webkit-scrollbar-track
+{
+border-radius: 2px;
+}
+ 
+#style-1::-webkit-scrollbar
+{
+width: 5px;
+background-color: #F7F7F7;
+}
+ 
+#style-1::-webkit-scrollbar-thumb
+{
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color: #BFBFBF;
+}
+/* Scrollbar End */ 
+ 
+ 
+ 
+ 
+.fa-lg {
+font-size: 1em;
+  
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 55px;
+height: 36px;
+text-align: center;
+top:12px; 
+font-size:20px;
+ 
+}
+ 
+ 
+ 
+.main-menu:hover, nav.main-menu.expanded {
+width:250px;
+overflow:hidden;
+opacity:1;
+ 
+}
+ 
+.main-menu {
+background:#F7F7F7;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:55px;
+overflow:hidden;
+-webkit-transition:width .2s linear;
+transition:width .2s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+  opacity:1;
+}
+ 
+.main-menu>ul {
+margin:7px 0;
+ 
+}
+ 
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+  
+ 
+ 
+}
+ 
+.main-menu li>a {
+position:relative;
+width:255px;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#8a8a8a;
+font-size: 13px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .14s linear;
+transition:all .14s linear;
+font-family: 'Strait', sans-serif;
+border-top:1px solid #f2f2f2;
+ 
+text-shadow: 1px 1px 1px  #fff;  
+}
+ 
+ 
+ 
+.main-menu .nav-icon {
+  
+position:relative;
+display:table-cell;
+width:55px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+ 
+}
+ 
+.main-menu .nav-text  {
+   
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+font-family: 'Titillium Web', sans-serif;
+}
+ 
+.main-menu .share {
+    background-color:none;
+}
+ 
+ 
+ 
+.main-menu .fb-like {
+ 
+left: 180px;
+position:absolute;
+top: 15px;
+}
+ 
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+  
+}
+ 
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+ 
+}
+ 
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+  
+}
+ 
+ 
+/* Logo Hover Property */
+ 
+ 
+.settings:hover, settings:focus {   
+  background:url( https://s17.postimg.org/74cl7s05b/logo_hover.jpg);
+  -webkit-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+-moz-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+-o-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0; 
+}
+ 
+.settings:active, settings:focus {   
+  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
+  -webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+-moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+-o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0; 
+}
+ 
+ 
+a:hover,a:focus {
+text-decoration:none;
+border-left:0px solid #F7F7F7;
+ 
+ 
+ 
+}
+ 
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+  
+}
+ 
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+text-transform: uppercase;
+}
+ 
+ 
+ 
+ 
+/* Darker element side menu Start*/
+ 
+ 
+.darkerli
+{
+background-color:#ededed;
+text-transform:capitalize;  
+}
+ 
+.darkerlishadow
+{
+background-color:#ededed;
+text-transform:capitalize;  
+-webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+-moz-box-shadow:    inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+box-shadow:         inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+}
+ 
+ 
+.darkerlishadowdown
+{
+background-color:#ededed;
+text-transform:capitalize;  
+-webkit-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+-moz-box-shadow:    inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+box-shadow:         inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+}
+ 
+/* Darker element side menu End*/
+ 
+ 
+ 
+ 
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#00bbbb;
+text-shadow: 0px 0px 0px; 
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+} 
+#Yasss {
+  position:absolute;
+  top: 400%;
+  width:40%;
+  background-color:#3f48cc;
+  border-radius: 100px;
+}
+#yasin {
+  width:200px;
+  height: auto;
+  transition: 0.5s;
+}
+#yasin:hover {
+  transition: 0.5s;
+  width:400px;
+  height: auto;
+}
+.heyo {
+  color:white;
+  transition: 0.5s;
+}
+.heyo:hover {
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+        
+        </style>
+        
+        <nav class="main-menu">
+            <div>
+               <a class="logo" href="http://startific.com">
+               </a> 
+             </div> 
+           <div class="settings"></div>
+           <div class="scrollbar" id="style-1">
+           <ul>
+           <li>                                   
+           <a href="new.html">
+           <i class="fa fa-home fa-lg"></i>
+           <span class="nav-text">Home</span>
+           </a>
+           </li>   
+              
+           <li>                                 
+           <a href="#">
+           <i class="fa fa-user fa-lg"></i>
+           <span class="nav-text">Login</span>
+           </a>
+           </li>   
+            
+               
+           <li>                                 
+           <a href="#">
+           <i class="fa fa-envelope-o fa-lg"></i>
+           <span class="nav-text">Contact</span>
+           </a>
+           </li>   
+             
+           <li>
+           <a href="#">
+           <i class="fa fa-heart-o fa-lg"></i>
+                                   
+           <span class="share"> 
+            
+           <div class="addthis_default_style addthis_32x32_style">
+             
+           <div style="position:absolute;
+           margin-left: 56px;top:3px;"> 
+                
+            <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" class="share-popup"><img src="http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png" width="30px" height="30px"></a>
+            <a href="https://twitter.com/share" target="_blank" class="share-popup"><img src="https://cdn1.iconfinder.com/data/icons/metro-ui-dock-icon-set--icons-by-dakirby/512/Twitter_alt.png" width="30px" height="30px"></a>
+            <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=_URL_&title=_TITLE_
+           " target="_blank" class="share-popup"><img src="http://icons.iconarchive.com/icons/danleech/simple/512/google-plus-icon.png" width="30px" height="30px"></a>    
+           </div>
+           <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+           <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ff17589278d8b3a"></script>
+                                  
+           </span>
+                <span class="twitter"></span>
+                <span class="google"></span>
+                <span class="fb-like">  
+           <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fstartific&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+                                  
+                                   </span>
+                                   <span class="nav-text">
+                                   </span>
+                                   
+                               </a>
+            
+           </li>
+                                       
+            
+             
+             
+           </li>
+           <li class="darkerlishadow">
+           <a href="#">
+           <i class="fa fa-clock-o fa-lg"></i>
+           <span class="nav-text">News</span>
+           </a>
+           </li>
+             
+           <li class="darkerli">
+           <a href="#">
+           <i class="fa fa-desktop fa-lg"></i>
+           <span class="nav-text">Technology</span>
+           </a>
+           </li>
+             
+           <li class="darkerli">
+           <a href="#">
+           <i class="fa fa-plane fa-lg"></i>
+           <span class="nav-text">Travel</span>
+           </a>
+           </li>
+             
+           <li class="darkerli">
+           <a href="#">
+           <i class="fa fa-shopping-cart"></i>
+            <span class="nav-text">Shopping</span>
+           </a>
+           </li>
+             
+           <li class="darkerli">
+           <a href="music and movie.html">
+           <i class="fa fa-microphone fa-lg"></i>
+           <span class="nav-text">Film & Music</span>
+           </a>
+           </li>
+            
+           <li class="darkerli">
+           <a href="responsive.html">
+           <i class="fa fa-flask fa-lg"></i>
+           <span class="nav-text">lyrics</span>
+           </a>
+           </li>
+             
+           <li class="darkerli">
+           <a href="#">
+           <i class="fa fa-picture-o fa-lg"></i>
+           <span class="nav-text">Art & Design</span>
+           </a>
+           </li>
+            
+           <li class="darkerli">
+           <a href="#">
+           <i class="fa fa-align-left fa-lg"></i>
+           <span class="nav-text">Magazines
+           </span>
+           </a>
+           </li>
+             
+           <li class="darkerli">
+           <a href="#">
+           <i class="fa fa-gamepad fa-lg"></i>
+           <span class="nav-text">Games</span>
+           </a>
+           </li>
+             
+           <li class="darkerli">
+           <a href="#">
+           <i class="fa fa-glass fa-lg"></i>
+           <span class="nav-text">Life & Style
+           </span>
+           </a>
+           </li>
+             
+           <li class="darkerlishadowdown">
+           <a href="#">
+           <i class="fa fa-rocket fa-lg"></i>
+           <span class="nav-text">Fun</span>
+           </a>
+           </li>
+            
+             
+           </ul>
+            
+             
+           <li>
+                                              
+           <a href="#">
+           <i class="fa fa-question-circle fa-lg"></i>
+           <span class="nav-text">Help</span>
+           </a>
+           </li>   
+               
+             
+           <ul class="logout">
+           <li>
+                              <a href="#">
+                                    <i class="fa fa-lightbulb-o fa-lg"></i>
+                                   <span class="nav-text">
+                                       BLOG 
+                                   </span>
+                                   
+                               </a>
+           </li>  
+           </ul>
+                   </nav>
+                   <div id="Yasss">
+                    <center><p class="heyo">Nova Comics™ presents</p>
+                  <img src="yo.png" id="yasin">
+                  <p class="heyo">DRAGON BALL XTREME®<br></p>
+                  <p class="heyo">Coming Late 2023</p>
+                  <p class="heyo">on CloudStream | Youtube | Yumblr</p></center>
+                </div>
+        <img src="data:image/jpeg;base64,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">
+        <h1>Introduction</h1>
+        <p>As it has been from the beginning, our purpose goes far beyond profit. I believe in the pursuit of doing good</p>
+        <center><h1>WELCOME</h1></center>
+        <p>
+         Firstly,I would like to state for those who don't know, there was, and still is, a skepticism on what the gospel says
+         and if there is skepticism on what the gospel says, then there is more than enough reason to suspect everything in the
+         historical accounts on <strong>"christianity"</strong></p>
+         <h1>Ackowledgements</h1>
+         <p>My writings are not mainly on my research but with the help of a book known as <strong><em>"IN THE DEFENCE OF THE GOSPELS, THE CASE FOR RELIABILITY"</em></strong>I thank the writer of this book, he is a good friend of my mom, a lawyer, Christian apologist and an award-winning radio and television personality
+        ,<strong>John Stewart</strong></p>
+        <div id="basic-info"><h1>Preface</h1>
+        <p>According to me I think the issue started with the uncoordinated stating in John 3:13,
+            Basically, the skepticism greatly started in the 1st century, when “critical” schools in Germany began doubting certain aspects of the biblical accounts. What started as a scholarly skepticism slowly grew into an entire cottage industry of questioning everything about Jesus, including whether if he even existed.
+            Until the 1960's, however, the arguments of skeptics of Christianity were confined to a few liberal seminaries and graduate schools, and atheism was largely seen as a “fringe” position, unworthy  of devoting significant time and attention  to refute it.
+            Fast forward to 1969, atheist philosopher Paul Kurtz founded Prometheus Books as a publishing vehicle for atheists and skeptics. In 1972 Kurtz wrote his own book, <em>"The New Skepticism"</em>, and labeled his approach to finding truth “skepticism inquiry” a euphemism for anti-supernaturalism, and a guiding principle of secularism.
+            As secularism continued encroaching on Christian culture, in 1972 Josh McDowell penned the first popular book presenting evidence in defence of Christianity, <em>"Evidence that demands a verdict"</em>
+            The secularists first garnered the attention of evangelicals on a large scale in the mid 1980's when a self-appointed group of liberal scholars called the “Jesus seminar” had the temerity to vote on whether Jesus' words in the gospels were authentic.<br>
+            They concluded that fewer than 20% of the the words attributed to Jesus originated with Him. The unorthodox findings of the Jesus Seminar<br>
+            made world headlines, and this was the general popluation's first exposure to the claim that the gospels were not historically reliable. Skepticism had now gone mainstream.
+               
+            </p>
+            <p>Evangelical scholars viewed the Jesus Seminar scholars with jaundiced eyes,noting that the 150 Jesus Seminar scholars were all
+                from liberal side of christianity whose conclusions were nothing new. But the protestations of the Bible-beliving Christians were drowned out by a new iterest in skepticism toward Christianity
+            that had suddenly become newsworth. Mainstream media realised that the Jesus Seminar's sensation claims created a buzz that drew people in, creating a hunger
+        for more. This hunger become an invitation for more liberal scholars and more sensation claims from skeptics. This was a harbinger of what was to come.
+        The classical atheism of the 1960's and 1970's never went mainstream despite the best efforts of writers such as Bertand Russell, George Smith and Anthony Flew. In 1986, British biologist Richard Dawkins wrote <em>"The Blind Watchmaker"</em>, establish him as a spokesperson for both atheismand anti-christian polemics 
+        the perfect storm of rising secularism, the Jesus Seminar and Richard Dawkins opened a door of opportunity for the new genre of scholarly skepticism </p>
+         <p>I myself am still making research and reading his book. I am making this research simply because it is written in <strong>1 Peter 3:15"to be ready to make a defence for having hope in Jesus" </strong> </p>
+         <h1>next article</h1>
+         <p><em>Randy Alcorn's Seeing the unseen</em></p></div>
+         
+         <button id="clicker">phone number</button>
+        <div id="cool-end"><h1>Webmaster:Mugabi Jeremiah</h1>
+            <p>updates might not be made beginning from 28th May,2023 until further notice. </p>
+        <a href="https://novuslegend.github.io/" target="_blank"><p>Check out my other website</p></a></div>
+        <marquee><h1 id="fantasy"> bye </h1></marquee>
+
+        <script>
+            var clickerButton = document.getElementById("clicker");
+            var onButtonClick = function() {
+        clickerButton.textContent = "0758066054";
+    };
+    clickerButton.addEventListener("click", onButtonClick);
+    
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News</title>
+    </head>
+    <body>
+        <style>
+            #ui {
+  position: relative;
+  background-color:none;
+}
+p{
+  font-family:'Segoe UI';
+  color: white; 
+}
+h1{
+  font-family:'Segoe UI';
+  color: white;
+
+}
+body {
+  background-color: rgb(0, 27, 100);
+
+}
+ul {
+          display: flex;
+          align-items: center;
+  justify-content: center;
+          font-family: 'Poppins';
+          box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+          border-radius: 9px;
+          height:50px;
+          padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        transition: 0.3s;
+        color: #3cff00;
+        background:none;
+    }
+    ul li ul.dropdown {
+        transition: 0.3s;
+        min-width: 100%;
+        height:200px; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown {
+        transition: 0.3s;
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+        transition: 0.3s;
+        display: block;
+    }
+    nav ul li:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  font-family: 'Segoe UI';
+  padding: 0 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:hover::after{
+  width:100%;
+}
+#gogo {
+   position:relative;
+    border-radius: 100%;
+    width:40px;
+height:40px;
+overflow:hidden;
+transition: 1.0s;
+}
+#gogo:hover{
+    transition:1.2s;
+    transform:rotate(720deg);
+    -wekbit-transform:rotate(720deg); 
+    -moz-transform:rotate(720deg); 
+}
+#Yassssio {
+  position:absolute;
+  top: 20%;
+  left:0%;
+  width:70%;
+  height: 90%;
+  background-color:#3f48cc;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+#Yassssio:hover {
+  background-color:black;
+}
+.d111 {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  color:white;
+  transition: 0.5s
+}
+.d111:hover {
+  font-size: larger;
+  color:aqua;
+  transition: 0.5s;
+}
+.d112 {
+  position: absolute;
+  top: 40%;
+  left: 2.5%;
+  color:white;
+  transition: 0.5s
+}
+.d112:hover {
+  font-size: larger;
+  color:aqua;
+  transition: 0.5s;
+}
+.d113 {
+   position: absolute;
+  top: 60%;
+  left: 5%;
+  color:white;
+  transition: 0.5s
+}
+.d113:hover{
+  font-size: larger;
+  color:aqua;
+  transition: 0.5s;
+}
+.v {
+            color:rgb(46, 46, 46);
+            font-family:'Segoe UI';
+            transition:0.9s;
+        }
+        .v:hover {
+          transition: 0.5s;
+          color:rgb(0, 255, 213) ;
+        }
+        #Yasssso {
+  position:absolute;
+  top: 130%;
+  left:0%;
+  width:70%;
+  height: 150%;
+  background-color:#3f48cc;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+#Yasssso:hover {
+  background-color:black;
+}
+.d11 {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  color:white;
+  transition: 0.5s
+}
+.d11:hover {
+  font-size: larger;
+  color:aqua;
+  transition: 0.5s;
+}
+</style>
+<nav id="myTopnav">
+  <ul>
+    <li class="topnav">
+      <img src="Picture1.png">
+      <ul class="dropdown">
+          <li class="responsive"><a href="new.html">Home</a></li>
+          <li class="responsive"><a href="about.html">About</a></li>
+          <li  class="responsive"><a href="archives intro.html">ARCHIVES®</a></li>
+      </ul>
+    </li>
+    <li class="topnav"><a href="characters.html">Characters</a></li>
+    <li class="topnav">
+        <a href="#" class="topnav">Movies ▾</a>
+        <ul class="dropdown">
+            <li class="responsive"><a href="releases.html">Releases</a></li>
+            <li  class="responsive"><a href="news.html">News</a></li>
+            <li  class="responsive"><a href="side movies.html">Side movies</a></li>
+        </ul>
+    </li>
+    <li>
+      <a href="#">Contact</a>
+      <ul class="dropdown">
+          <li><img src="email_grey600_24dp.png" id="gogo">novacomicsoriginal@gmail.com</li>
+          <li>0758066054</li>
+      </ul>
+  </li>
+    </li>
+    <li><a href="comics.html">Comics</a></li>
+    <li><a href="books.html">Books</a></li>
+    <li><a href="games.html">Games</a></li>
+</ul>
+</nav>
+<div id="Yassssio">
+  <center><h1 class="v">ARCHIVES®</h1></center>
+<p class="d111">Possible release date to be Mid December because the animators and the writers are not agreeing on the right story for the movie, they keep on deciding a new story which slows down the production. The Animation Director is also changing the animation from 3D to Anime style and he says that, “The animating software we are using has got a major update and is getting another one and we don’t want to use outdated software and if we keep up with the updates, we shall have to keep on changing the code from version to version so it would be better to use animating software that doesn’t have frequent updates.” <br></p>
+<p class="d112">Other reasons for the fluctuating release dates is due to the time given to the animators for animating is cutting into the time for their personal administration and the animators are the same people working on the games and side movies and in addition to the fact that they are students and the school term is returning around the corner, their time is limited.<br></p>
+<p class="d113">On the good side, Animators say that the animation so far is looking good and that this just might be the beginning of Nova Comics’ Fame and popularity. The animation has some unique story and well for teens, we have thought of a good mechanism and everything is in sync with others and the fact that this is our first production, we did good not to make it some super powered freak show where everyone dies and we also did good not to make it some musical where the good and bad guys become friends through some song.<br></p>
+
+</div>
+<div id="Yasssso">
+  <center><h1 class="v">A Word from The Executive Board</h1></center>
+<p class="d11">Hello I am M.Jeremiah11(Novus Legend) and I am the Chief Developer and I would like to say that we, as the executive board of Nova Comics , were (and still are) students and thought of starting our own Cinematic Universe, We thought of it as a joke or something that normal high school students would randomly think of to generate popularity and laughs but I thought of it as an opportunity and I raised the idea to start production to my associates and then we started thinking of characters and since we were just teens, some of us had outrageous ideas but as we thought we  had those that would be the verification pass and those were, M.Kieth(The Author) ,O.Darylo(Shadow Legend) and I was the final pass and we came up with the Ideas that I have presented on the website and more, then since we were in school, we had to gain some popularity and advertise what we are doing so we came up with a crazy name, The Crazy VIII, and well we  were so far known just for being a group then when the next school period came in, we got new members and then we changed the name to, The Cacoons’ Crazy XV, and one specific member spoilt our name by making a social group and adding us into sports where he took our name and played a match and lost 7-0 then everyone was including us the originals who didn’t even participate, for that reason, I did not put him as an executive member of the Nova Comics. After generating a name and ideas, we started production and certain people were given certain roles, I was made the Chief Developer because I know the most part of programming that we need and M.Kieth (The Author) as his title suggest, wrote the main story of THE ARCHIVES® and thought of the names and the backstories of some of the major Characters In our Cinematic Universe. Then others Like Darylo and Anderson were put in charge of animating but have shown no sense of production so for that matter, I have taken on their role, we had high hopes and were looking positively but what we didn’t know was that the hardest part was the production, we thought that since there are some youtubers like SLH animations, RHG animations and CG geeks who do animation in both 3D and 2D and they do it alone, then what would stop us from doing the same, So we started animating but us of so far, I can tell you, even the trailers are still in production, first of all, we are African teens who lack the necessary software and time to make 3D animations so we diverted to 2D animations and even that is equally as difficult but has shown more productivity. So our popularity might came later on but we are okay with that and are looking forward to seeing our company develop gradually since you can’t build a town overnight. We are not so financially upright but if you are to start something big then start it now,<br>
+Thank you for listening.<br>
+NovusLegend.
+<br></p>
+
+
+
+</div>
+    </body>
+</html>

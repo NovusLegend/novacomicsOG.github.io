@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nova Comics™</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Navigation Bar Hover Animation </title>
+        <!---Custom Css File!--->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <style>
+                        @viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
+@media screen and (max-width:320px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+}
+@media screen and (min-width:320px) and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+}
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+
+/* code that is here will apply to any screen size */
+@media screen and (orientation:portrait) {
+  /* ... */
+}
+@media screen and (orientation: landscape) {
+  /* ... */
+}
+@media only screen and (max-width: 480px) {
+  /* ... */
+}
+@media not (max-width: 639px) {
+/* CSS rules for any device that is wider than 639 pixels */
+}
+          #ui {
+            position: relative;
+            background-color:none;
+          }
+          p{
+            font-family:'Segoe UI';
+            color: white; 
+        }
+        h1{
+            font-family:'Segoe UI';
+            color: white;
+
+        }
+        body {
+            background-color: rgb(0, 27, 100);
+
+        }
+       
+        #do {
+            background-color: black;
+            width: 99%;
+                position:absolute;
+                top:400%;
+                height: 435px;
+        }
+        .ig {
+            height:40px;
+            width:40px;
+        }
+        #gj {
+             background-color: white;
+             position:absolute;
+             width: 50%;
+            left:0%;
+            border-radius: 9px;
+            right:70%;
+            top: 45%;
+            transition:0.6s;
+        }
+        #gj:hover{
+          width: 60%;
+            transition: 0.6s;
+            font-size: larger;
+            background-color: black;
+        }
+        #game {
+            background-color: white;
+             position:absolute;
+            left:0%;
+            width: 50%;
+            right:auto;
+            border-radius: 9px;
+            top: 85%;
+            transition:0.6s;
+        }
+        #hidden {
+            position: absolute;
+            color:  rgb(0, 27, 100);
+            top: 480.5%;
+        }
+        #oye {
+            position: absolute;
+            top: 445%;
+        }
+        .gogog {
+            transition: 0.5s;
+            color: none;
+        }
+        .gogog:hover {
+            transition:0.5s;
+            color:orange;
+        }
+        #game:hover {
+          width: 60%;
+            transition: 0.6s;
+            font-size: larger;
+            background-color: black;
+        }
+        .v {
+            color:rgb(46, 46, 46);
+            font-family:'Segoe UI';
+            transition:0.9s;
+        }
+        .v:hover {
+          transition: 0.5s;
+          color:rgb(0, 255, 213) ;
+        }
+        #fg {
+          background-color: white;
+             position:absolute;
+            left:0%;
+            width: 50%;
+            height: 100%;
+            right:auto;
+            border-radius: 9px;
+            top: 120%;
+            transition:0.6s;
+        }
+        #fg:hover {
+          width: 80%;
+            transition: 0.5s;
+            font-size: larger;
+            background-color: black;
+        }
+        #ho {
+    position: absolute;
+    top: 385%;
+    left: 7%;
+    color:rgb(0, 27, 100);
+    transition: 0.5s;
+}
+#ho:hover {
+    transition: 0.7s;
+    color: #2192ff;
+}
+#yoy {
+    position: absolute;
+    top: 380%;
+    border-radius: 100%;
+    color: rgb(0, 27, 100);
+    transition: 3s;
+}
+#yoy:hover {
+    color: none;
+    transition:1.5s;
+    transform:rotate(720deg);
+    -wekbit-transform:rotate(720deg); 
+    -moz-transform:rotate(720deg); 
+
+}
+        #sd {
+            color:red;
+        }
+        ul {
+          display: flex;
+          align-items: center;
+  justify-content: center;
+          font-family: 'Poppins';
+          box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+          border-radius: 9px;
+          height:50px;
+          padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        transition: 0.5s;
+        color: #3cff00;
+        background:none;
+    }
+    ul li ul.dropdown {
+        min-width: 100%;
+        height:200px; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        transition: 0.5s;
+        transform: rotateX('15deg');
+    }
+    ul li:hover ul.dropdown {
+        transition: 0.5s;
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+        transition: 0.5s;
+        display: block;
+    }
+    nav ul li:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  font-family: 'Segoe UI';
+  padding: 0 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:hover::after{
+  width:100%;
+}
+#end {
+    width: 99%;
+    height: 60%;
+    top: 391%;
+    background-color:rgb(0, 0, 0);
+    position:absolute;
+}
+#gogo {
+  position:relative;
+    border-radius: 100%;
+    width:40px;
+height:40px;
+overflow:hidden;
+transition: 1.0s;
+}
+#gogo:hover{
+    transition:1.2s;
+    transform:rotate(720deg);
+    -wekbit-transform:rotate(720deg); 
+    -moz-transform:rotate(720deg); 
+}
+#Yasss {
+  position:absolute;
+  top: 30%;
+  width:80%;
+  background-color:#3f48cc;
+  border-radius: 100px;
+}
+#yasin {
+  position:relative;
+  border-radius: 40px;
+  left: 10%;
+  width:200px;
+  height: auto;
+  transition: 0.5s;
+}
+#yasin:hover {
+  transition: 0.5s;
+  width:400px;
+  height: auto;
+}
+#heyoo {
+  color:white;
+  transition: 0.5s
+}
+#heyoo:hover {
+  font-size: larger;
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.d2 {
+  position:absolute;
+  top:40% ;
+  left: 42%;
+  color:white;
+  transition: 0.5s;
+}
+.d2:hover {
+  font-size: larger;
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.d1 {
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  color:white;
+  transition: 0.5s
+}
+.d1:hover {
+  font-size: larger;
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.d3 {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  color:white;
+  transition: 0.5s
+}
+.d3:hover {
+  font-size: larger;
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+#Yassss {
+  position:absolute;
+  top: 10%;
+  right:0%;
+  width:90%;
+  background-color:#3f48cc;
+  border-radius: 100px;
+}
+#yasinn {
+  position:relative;
+  border-radius: 100px;
+  top: 0%;
+  left: 0%;
+  width:150px;
+  height: auto;
+  transition: 0.5s;
+}
+#yasinn:hover {
+  transition: 0.5s;
+  width:300px;
+  height: auto;
+}
+#heyooo {
+  color:white;
+  transition: 0.5s
+}
+#heyooo:hover {
+  font-size: larger;
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.d22 {
+  position:absolute;
+  top:40% ;
+  left: 42%;
+  color:white;
+  transition: 0.5s;
+}
+.d22:hover {
+  font-size: larger;
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.d11 {
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  color:white;
+  transition: 0.5s
+}
+.d11:hover {
+  font-size: larger;
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.d33 {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  color:white;
+  transition: 0.5s
+}
+.d33:hover {
+  font-size: larger;
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+#comic-tab {
+  border-radius: 40px;
+  position: absolute;
+  right:3%;
+  width: 3%;
+  height:25%;
+  background-color: white;
+  transition: 0.5s;
+  content-visibility:hidden;
+} 
+#comic-tab:hover{
+  width: 35%;
+  height: 120%;
+  background-color: black;
+  transition: 0.5s;
+  content-visibility: visible;
+}
+#news {
+  background-color: white;
+  border-radius: 60px;
+  position: absolute;
+  top: 230%;
+  width: 3%;
+  height:25%;
+  left: 0%;
+  transition: 0.5s;
+  content-visibility:hidden;
+}
+#news:hover {
+  background-color: #2192ff;
+  height:150%;
+  width:70%;
+  content-visibility:visible;
+}
+#Yassssio {
+  position:absolute;
+  top: 10%;
+  left:0%;
+  width:70%;
+  height: 20%;
+  background-color:#3f48cc;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+#Yassssio:hover {
+  background-color:black;
+}
+.d111 {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  color:white;
+  transition: 0.5s
+}
+.d111:hover {
+  font-size: larger;
+  color:aqua;
+  transition: 0.5s;
+}
+.d112 {
+  position: absolute;
+  top: 50%;
+  left: 2.5%;
+  color:white;
+  transition: 0.5s
+}
+.d112:hover {
+  font-size: larger;
+  color:aqua;
+  transition: 0.5s;
+}
+.d113 {
+   position: absolute;
+  top: 65%;
+  left: 5%;
+  color:white;
+  transition: 0.5s
+}
+.d113:hover{
+  font-size: larger;
+  color:aqua;
+  transition: 0.5s;
+}
+#logos {
+  top: 0%;
+  position: absolute;
+  left: 70%;
+}
+        </style>
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 360px)" href="portrait.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="landscape.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="desktop.css">
+        <div class="container">
+        <nav id="myTopnav">
+            <ul>
+              <li class="topnav">
+                <img src="Picture1.png">
+                <ul class="dropdown">
+                    <li class="responsive"><a href="new.html">Home</a></li>
+                    <li class="responsive"><a href="about.html">About</a></li>
+                    <li  class="responsive"><a href="archives intro.html">ARCHIVES®</a></li>
+                </ul>
+              </li>
+              <li class="topnav"><a href="characters.html">Characters</a></li>
+              <li class="topnav">
+                  <a href="#" class="topnav">Movies ▾</a>
+                  <ul class="dropdown">
+                      <li class="responsive"><a href="releases.html">Releases</a></li>
+                      <li  class="responsive"><a href="news.html">News</a></li>
+                      <li  class="responsive"><a href="side movies.html">Side movies</a></li>
+                  </ul>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+                <ul class="dropdown">
+                    <li><img src="email_grey600_24dp.png" id="gogo">novacomicsoriginal@gmail.com</li>
+                    <li>0758066054</li>
+                </ul>
+            </li>
+              </li>
+              <li><a href="comics.html">Comics</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="games.html">Games</a></li>
+          </ul>
+        </nav>
+        <div id="ui"><center>
+            <h1>WELCOME</h1>
+        </center>
+        <p>
+            This is the official website for Nova Comics™ where updates,trailers and releases will be made.
+        </p></div>
+        <a href="releases.html"><div id="gj"><h1 class="v">UpComing Movies</h1>
+          <p class="v">
+             
+             THE ARCHIVES®:The New Keeper<br>
+             THE ARCHIVES®:The series<br>
+             LIGHTCHASE®:Evolutionary speed<br>
+             YASSASIN®:Make you beg for Death<br>
+             DRAGOIL®:To the human age<br>
+         </p></div></a>
+         <a href="games.html"><div id="game"><h1 class="v">Upcoming Games</h1>
+    <p class="v">
+        YASSASIN CREED®:Kill Them All<br>
+        Speed Beyond Limit<br>
+    </p></div></a>
+    <a href="side movies.html"><div id="fg"><h1 class="v">Side Movies</h1>
+    <p class="v">
+            Dragon Ball Xtreme<br>
+            Keeping UP with Insanity<br>
+            <p id="sd">SPECIAL<br></p>
+        </ul>
+        </p>
+        <div id="Yasss">
+          <center><p id="heyoo">Nova Comics™ presents</p></center>
+        <img src="yo.png" id="yasin">
+        <p class="d1">DRAGON BALL XTREME®<br></p>
+        <p class="d2">Coming Late 2023<br></p>
+        <p class="d3">on CloudStream | Youtube | Tumblr<br></p>
+      </div>
+    </p></div></a>
+    <div id="end">
+        <h1>Follow us</h1>
+        <p>
+          <a href="https://www.linkedin.com/">LinkedIn</a><br>
+          Youtube<br>
+           <a href="https://twitter.com/novacomics31775" target="_blank">twitter<br></a> 
+            Facebook<br>
+            tumblr<br>
+            <a href="http://www.instagram.com/novacomics"><img src="ig.png" id="gogo"></a><br>
+            <img src="Screenshot 2023-08-27 183130.png" id="logos">
+        </p>
+    </div>
+    <p id="oye">Copyright 2023 —Nova Comics™. All rights reserved</p>
+    <div id="how"><img src="logo.png" id="yoy"><p id="ho">Made by M.Jeremiah11(NovusLegend)</p></div>
+    <a href="comics.html"><div id="comic-tab">
+      <center><h1 class="v">Comics</h1></center>
+    <div id="Yassss">
+          <center><p id="heyooo">Nova Comics™ presents</p></center>
+          <img src="yo.png" id="yasinn">
+        <p class="d11">JUSTICE®<br></p>
+        <p class="d22">Coming 2023<br></p>
+        <p class="d33">ISSUE #1<br></p>
+      </div>
+    </div></a>
+    <a href="news.html"><div id="news"><center><h1 class="v">News</h1></center>
+      <div id="Yassssio">
+        <center><h1 class="v">ARCHIVES®</h1></center>
+      <p class="d111">Possible release date to be Mid December 2023 because the animators are...<br></p>
+      <p class="d112">Release date fluctuating because the time for the ...<br></p>
+      <p class="d113">Animators say that THE ARCHIVES® might just be the beginning of...<br></p>
+    </div>
+    </div></a>
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+$(function(){
+           $('.container').on('click', function(){
+              $('.letter').toggleClass('zoom');
+           });
+        });
+</script>
+    </body>
+</html>

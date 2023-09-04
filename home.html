@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Novus Legend</title>
+    </head>
+    <body>
+        <style>
+            h2 { font-family:Arial, Helvetica, sans-serif;
+                color:rgb(255, 255, 255)
+                
+            }
+            body {
+                background-color: rgb(0, 0, 0);
+
+            }
+            p{ font-family:Arial, Helvetica, sans-serif;
+                color: rgb(255, 255, 255);
+            }
+            h1{ font-family:Arial, Helvetica, sans-serif;
+                color: rgb(255, 255, 255);
+            }
+            #cool-end {
+                margin-top:550px;
+                background-color: rgb(70, 70, 70);
+            }
+            ul {
+          display: flex;
+          align-items: center;
+  justify-content: center;
+          font-family: 'Poppins';
+          box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+          border-radius: 9px;
+          height:50px;
+          padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        transition: 0.3s;
+        color: #3cff00;
+        background:none;
+    }
+    ul li ul.dropdown {
+        transition: 0.3s;
+        min-width: 100%;
+        height:200px; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown {
+        transition: 0.3s;
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+        transition: 0.3s;
+        display: block;
+    }
+    nav ul li:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  font-family: 'Segoe UI';
+  padding: 0 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:hover::after{
+  width:100%;
+}
+        </style>
+                       <nav id="myTopnav">
+                        <ul>
+                          <li class="topnav">
+                            <img src="Picture1.png">
+                            <ul class="dropdown">
+                                <li class="responsive"><a href="new.html">Home</a></li>
+                                <li class="responsive"><a href="about.html">About</a></li>
+                                <li  class="responsive"><a href="archives intro.html">ARCHIVES®</a></li>
+                            </ul>
+                          </li>
+                          <li class="topnav"><a href="characters.html">Characters</a></li>
+                          <li class="topnav">
+                              <a href="#" class="topnav">Movies ▾</a>
+                              <ul class="dropdown">
+                                  <li class="responsive"><a href="releases.html">Releases</a></li>
+                                  <li  class="responsive"><a href="news.html">News</a></li>
+                                  <li  class="responsive"><a href="side movies.html">Side movies</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                            <a href="#">Contact</a>
+                            <ul class="dropdown">
+                                <li><img src="email_grey600_24dp.png" id="gogo">novacomicsoriginal@gmail.com</li>
+                                <li>0758066054</li>
+                            </ul>
+                        </li>
+                          </li>
+                          <li><a href="comics.html">Comics</a></li>
+                          <li><a href="books.html">Books</a></li>
+                          <li><a href="games.html">Games</a></li>
+                      </ul>
+                    </nav>
+        
+         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAAB3CAMAAAAq0mI9AAAAxlBMVEUAAAD///8ngP9ycnLo6Og2NjapqakohP+ysrLa2toiYLMogv8md+Ld3d0sLCzs7OwmJib19fXAwMAhX65SUlKSkpIxMTESEhIgICDT09N+fn6JiYnKysoMEh+cnJw9PT1kZGQAABEiWaIqgPILHTgfdesAFjQSEAo0iv9HjvRklOZjj85ihLZXWFxJSUhmdpNYc5RPWmQoJxJGQjwAAB1oaF8MO2wALlwlcdQkbskWJj0AI0YQQnwYSIgPK0shU5UARo8xLSO2qLbBAAACzUlEQVR4nO2YW1ecMBRGE+4IAQa5g4CMrfTi9GJrtVrb/v8/VSAJYu1a0yc4D2c/wTcDs1cuZ5IQgiAIgiAIgiAIgiAIgiAIgiAwaO0JZixDlfGw3spqoUI5frAILRFam2nNSD8aPWWZDdAvfsoaCtCv+kcGyc9P5iyE6EfVOdNA+s0VJtot/DpzP+BebO9ny6ikC7/TXlEcE4IflVH4zM9UFAWGXyui3Qs/59XryyBIgixLN/QTs0F/lpz25pu3795fHfRg0Au8xAuydEXLhV/OfzZe+Hnth4+fPhNyqUdqUZaF2h7GMrSN366ZkmoOWN2QLCos2+ef+xrL8yo04rbJNvCj7RgkovrtrCglRcj4aNSsoo30YGq41NOTTfymAdjyYlMOdUa0pG2ox96yjh8bg3ociVckCkXD1U3aqEZy7D1r+E0DMKeaOtiJKVMQUlQ76usQ/OjQqY1Wkjbnt+FBzmYNhp9FDnHiiWFXXX8Z/jUMGH7cyS9bUvNxx76SG/cEjJ8q2u9KlLqafLs1e0B+bJAqhA1lB9LtTcWE49fGlHmJ2BcNK8G7flgXAPJTW4sUfOTt2vPvZ67pgPIrS7kuYNfndzep6yig/Gq5Kg3JveKSM2B+aprLCviw7ztofmrKZDP+MM3+EZifmvGqR2PS9aZ5ew7Lrwg02XrdMG1HK0h+Bpk79+e4GeovIPkVhjwusAY9x1Ecl0DySzJRWCpyv1dGqW7yU4D4ybrHhq2Fa448Tn7jFYT1QRKXZRzH9bh0fjgd6Kb418l4/bC93wt+W+FIIW7B+em+mC0c3v3M29RpScCrjTgv9/iaxl5tv3scuf0YBeVeJNxaakFNBSyfD1Lj44+tRkJfAqh7l+eTEgDn0Asa7S89Dc7snRCbTIkfHX9kZYwnQ984/vX1SVSjyu28MtTNTq4QBEEQBEEQBEEQBEEQBEEQ5P/4A4gfLc1h4t2wAAAAAElFTkSuQmCC" width="300">
+        <h1>WELCOME</h1>
+        <p>this page is experimental
+        
+       <h2>PURPOSE</h2>
+      
+       <p>As it has been from the beginning, our purpose goes far beyond profit. I believe in the pursuit of doing good</p>
+       <h2>Walkthrough</h2>
+       <p><em>"The only thing achieved in life without effort is failure"</em> St Francis of Asisi, so in conclusion, put effort in everything you do so as to avoid failure.</p>
+       <h1>St Joseph of Cupertino's prayer</h1>
+       <p id="St_Joseph">O Great St. Joseph of Cupertino,<br> who while on earth did obtain from God, <br>the grace to be asked at your examination,<br> only the questions you knew,<br> obtain for me a life favour in the examinations,<br> for which I am now preparing to undertake,<br>
+         In return I promise to make you known and cause you to be invoked,<br> Through Christ our Lord.</p>
+    <a href="https://en.wikipedia.org/wiki/Shinya_Yamanaka"><h1>Shinya Yamanaka</h1></a>
+    <p class="paragrafs"> this man discovered the use of pluripotent stem cells.<br>
+        The groundbreaking invention of induced pluripotent stem cells by Shinya Yamanaka not only gave hope to patients suffering from incurable diseases, but also laid a foundation for scientists to find treatments for the diseases that were considered untreatable before iPS cells.
+    </p>
+<p>those are a few of the people who have changed the world with what they did<br>
+others are as follows</p>
+<a href="https://en.wikipedia.org/wiki/Thomas_Edison"><h1>Thomas Edison</h1></p></a>
+<p class="paragrafs">Thomas Alva Edison was an American inventor and businessman. He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures</p>
+    <a href="https://en.wikipedia.org/wiki/Henry_Ford"><h1>Henry Ford</h1></a>
+    <p class="paragrafs">Henry Ford was an American industrialist and business magnate. He was the founder of Ford Motor Company, and chief developer of the assembly line technique of mass production</p>
+   <a href="https://en.wikipedia.org/wiki/Steve_Jobs"><h1>Steve Jobs</h1></a>
+   <p class="paragrafs">Steven Paul Jobs was an American business magnate, inventor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT.</p>
+<a href="https://en.wikipedia.org/wiki/Bill_Gates"><h1>Bill Gates</h1></a>
+<p class="paragrafs">William Henry Gates III is an American business magnate, philanthropist, and investor. He is best known for co-founding software giant Microsoft, along with his late childhood friend Paul Allen</p>
+<a href="https://en.wikipedia.org/wiki/Albert_Einstein"><h1>Albert Einstein</h1></a>
+<p class="paragrafs">Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the greatest and most influential physicists of all time. Best known for developing the theory of relativity, he also made important contributions to the development of the theory of quantum mechanics</p>
+<div id="cool-end"><h1>Webmaster:Mugabi Jeremiah</h1>
+    <p>updates might not be made beginning from 28th May,2023 until further notice. </p>
+    <a href="https://novuslegend1.github.io/" target="_blank"><p>Check out my other website</p></a></div>
+    
+</html>
